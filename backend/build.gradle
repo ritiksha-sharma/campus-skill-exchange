@@ -25,11 +25,19 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.security:spring-security-crypto'
-	runtimeOnly 'com.mysql:mysql-connector-j'
+
+	// PostgreSQL driver for Render database
+	runtimeOnly 'org.postgresql:postgresql'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+// Ensures Render always gets a predictable jar name
+bootJar {
+	archiveFileName = 'app.jar'
 }
