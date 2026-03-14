@@ -1,0 +1,57 @@
+﻿.\gradlew.bat : 
+At line:1 char:11
++ $output = 
+.\gradlew.bat clean 
+bootRun 2>&1; $output 
+| Out-File -Encod ...
++           ~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (:String) [   
+ ], RemoteExceptio    
+n
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+FAILURE: Build failed 
+with an exception.
+
+* Where:
+Build file 'C:\Users\A
+dministrator\Desktop\p
+roject-tt-2026\backend
+\build.gradle' line: 
+11
+
+* What went wrong:
+A problem occurred 
+evaluating root 
+project 'campus-skill-
+exchange'.
+> Could not set 
+unknown property 
+'sourceCompatibility' 
+for root project 'camp
+us-skill-exchange' of 
+type org.gradle.api.Pr
+oject.
+
+* Try:
+> Run with 
+--stacktrace option 
+to get the stack 
+trace.
+> Run with --info or 
+--debug option to get 
+more log output.
+> Run with --scan to 
+get full insights 
+from a Build Scan 
+(powered by 
+Develocity).
+> Get more help at htt
+ps://help.gradle.org.
+
+BUILD FAILED in 2s
