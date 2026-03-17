@@ -18,7 +18,7 @@ export default function LandingPage({ setUser }: { user: any, setUser: any }) {
 
     if (isLogin) {
       try {
-        const res = await fetch('http://localhost:8080/api/users/login', {
+        const res = await fetch('https://campus-skill-exchange.onrender.com/api/users/login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ username, password })
@@ -36,7 +36,7 @@ export default function LandingPage({ setUser }: { user: any, setUser: any }) {
       }
     } else {
       try {
-        const res = await fetch('http://localhost:8080/api/users/register', {
+        const res = await fetch('https://campus-skill-exchange.onrender.com/api/users/register', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ username, email, password, linkedinUrl: linkedin })
